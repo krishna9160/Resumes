@@ -1,0 +1,6 @@
+Supported production deployments, release management, incident troubleshooting, and root cause analysis for AWS EKS-based microservices applications.
+
+
+Worked on the SUNCOO cloud-native
+
+microservices-based e-commerce platform hosted on AWS. The application was developed using Node.js and PostgreSQL (AWS RDS), with REST APIs and gRPC for service communication. Utilized AWS EKS, Docker, Terraform, Jenkins, and Argo CD for container orchestration, infrastructure automation, and CI/CD-driven deployments, ensuring scalability, high availability, and reliability.
