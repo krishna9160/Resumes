@@ -1,6 +1,411 @@
-Supported production deployments, release management, incident troubleshooting, and root cause analysis for AWS EKS-based microservices applications.
 
+Pitani, Vasavi Chandra
+0 minutes 3 seconds0:03
+Pitani, Vasavi Chandra 0 minutes 3 seconds
+up in here the link of this Colibrium editor just if you want to know like the business or in detail okay like what is this Colibrium it manufactures some printers, powders and it also provides services okay so.
+Pitani, Vasavi Chandra 0 minutes 21 seconds
+That is a basic business that Colibrium additive does and status is the name of the ERP again for this Colibrium additive business. OK, so it has various business units. OK, it has, I mean it has businesses across.
+Pitani, Vasavi Chandra 0 minutes 43 seconds
+different areas in even in UK, US and in Asia. So like most of the business users are, I would say from based out of UK and US and even Canada.
+Pitani, Vasavi Chandra 1 minute 2 seconds
+Okay, of course we have the India users as well, but the business is not within India. Okay, so US is the primary or like.
+Pitani, Vasavi Chandra 1 minute 14 seconds
+most of the cases where we see most of the transactions in, or like major transactions, not just most. So apart from that, we have...
+Pitani, Vasavi Chandra 1 minute 26 seconds
+Oh, Belgium. No, sorry, this D. Yeah.
+Pitani, Vasavi Chandra 1 minute 33 seconds
+It's nothing, but it's Belgium only, right? The...
+MN
 
-Worked on the SUNCOO cloud-native
+Metpelly, Nirosha
+1 minute 39 seconds1:39
+Metpelly, Nirosha 1 minute 39 seconds
+It's German.
+PC
 
-microservices-based e-commerce platform hosted on AWS. The application was developed using Node.js and PostgreSQL (AWS RDS), with REST APIs and gRPC for service communication. Utilized AWS EKS, Docker, Terraform, Jenkins, and Argo CD for container orchestration, infrastructure automation, and CI/CD-driven deployments, ensuring scalability, high availability, and reliability.
+Pitani, Vasavi Chandra
+1 minute 40 seconds1:40
+Pitani, Vasavi Chandra 1 minute 40 seconds
+Oh, sorry, yeah, Germany. Yeah, sorry. Germany, we have another business unit. Then US, Germany, then Sweden.
+TC
+
+Thota, Chiranjeevi
+1 minute 40 seconds1:40
+Thota, Chiranjeevi 1 minute 40 seconds
+Had money also.
+Pitani, Vasavi Chandra 3 minutes 42 seconds
+These are the major ones we have costing, cost management and all. OK, so we so we work across the team. I mean, it's anyway the internal team, right? So, in case if you think that you have something that you need help from.
+Pitani, Vasavi Chandra 4 minutes 1 second
+the order side or the issue is not with the finance. So you just need to 1st get in touch with our other team members from SCM and get that sorted out before you reach out to the users, right? So yeah, that's how we work within the team.
+Pitani, Vasavi Chandra 4 minutes 20 seconds
+Apart from these.
+Pitani, Vasavi Chandra 4 minutes 23 seconds
+Yeah, ledgers. Yeah, in addition to the business units that we just spoke about, there are additional ledgers. So like India ledger and many other ledgers where we get transactions directly, not from the sub ledgers, but like to NJ or something. So.
+Pitani, Vasavi Chandra 4 minutes 42 seconds
+We do have other ledgers as well, which Madhu will walk you through when he cover this GL part or Chiranjeevi. So yeah, that is the basic idea of what this business is, collibrium or status is, and the modules and the scope.
+Pitani, Vasavi Chandra 5 minutes 1 second
+that we have. So we have three instances. Okay, one is the production instance that we have. I can also walk you through.
+Pitani, Vasavi Chandra 5 minutes 12 seconds
+Ch.
+Pitani, Vasavi Chandra 5 minutes 14 seconds
+How that looks like, okay, and then the URL. So this is the prod URL, ETVS, so yeah.
+Pitani, Vasavi Chandra 5 minutes 22 seconds
+This is ETVS broad.
+Pitani, Vasavi Chandra 5 minutes 25 seconds
+Then we have...
+Pitani, Vasavi Chandra 5 minutes 28 seconds
+Dev one, so this is ETVS Dev one.
+Pitani, Vasavi Chandra 5 minutes 33 seconds
+instance and then we have test as well.
+Pitani, Vasavi Chandra 5 minutes 42 seconds
+This is the test instance. So all of them look alike, same. So please be careful and do not open prod unless you need it, unless you are verifying or validating the transaction that is present only in prod. If you are doing some testing on all, don't do anything here, okay? Please be careful.
+Pitani, Vasavi Chandra 6 minutes 2 seconds
+and mindful while you are using the production environment. You might be aware, but I'm iterating again because even recently or like few months back, we got some instance from some other module where people end up making some transactions or doing or creating orders in.
+Pitani, Vasavi Chandra 6 minutes 21 seconds
+the prod thinking that they are in lower environment. Okay, so please double cheque before you perform any changes. Of course, we have some change management process as well that we need to follow. We need to get an approval from the GE lead before we make any changes in production. So even if you are aware of any solution,
+Pitani, Vasavi Chandra 6 minutes 41 seconds
+that is going to work. You first need to get approval through an RATM and refer that approval while making your changes. Okay. So that process we definitely need to follow without division, even if that's critical for the business. Okay. You just need to reach out and get approval.
+Pitani, Vasavi Chandra 7 minutes 1 second
+And get this done, so yeah, this is how this Colibrium additive instance looks like.
+Pitani, Vasavi Chandra 7 minutes 10 seconds
+And yeah, I don't think we have a lot of customizations or a lot of integrations, but we do have few in each of the sub-ledgers, like AR, few and AP. I don't think we have any, yeah, other than this IDR and.
+Pitani, Vasavi Chandra 7 minutes 29 seconds
+supplier invoices, but yeah, PPM and all will be having, but yeah, PPM and RMCS, we are not covering KT for that because we have dedicated people who is already taking care, but we'll, yeah, we'll extend this.
+Pitani, Vasavi Chandra 7 minutes 49 seconds
+module support to other team members later on, but now the idea is on the core finance modules. Okay, yeah, this is all.
+Pitani, Vasavi Chandra 8 minutes 1 second
+just about the introduction of status of equilibrium. Yeah, now Chiranjeevi can take through the ledgers available and the modules scope on for each business unit. You have that handy, Chiranjeevi?
+
+Thota, Chiranjeevi 13 minutes 43 seconds
+with the document as well. Coming to OCR, so previously it was OCR. Now we change it to IDR.
+Thota, Chiranjeevi 13 minutes 51 seconds
+So, mainly we are using these four views, 13, 14, 14, and 47.
+Thota, Chiranjeevi 13 minutes 56 seconds
+ID invoices is nothing but will be having the e-mail ID defined at payables level, and once the users send that send the invoices to that e-mail ID, it will automatically create invoices at AP level after running import payable invoices program, so most of the programs.
+Thota, Chiranjeevi 14 minutes 17 seconds
+I mean, most of the scheduled programmes are scheduled in our Fusion instance. It is through Atomic.
+Thota, Chiranjeevi 14 minutes 28 seconds
+So we are maintaining automatic as a automated tool where we are giving all the parameters and it will trigger based upon the given time.
+Thota, Chiranjeevi 14 minutes 42 seconds
+And some of the programmes are scheduled in Fusion also, but that are very rare.
+Thota, Chiranjeevi 14 minutes 50 seconds
+Mostly, most of the programmes are coming from automatically.
+Thota, Chiranjeevi 14 minutes 55 seconds
+Yeah, as I said, like a PNN invoices, whenever PPN team create any contract for the above company codes, we have an intercompany setup.
+Thota, Chiranjeevi 15 minutes 5 seconds
+So there will be cross touch between the projects and it will automatically generate the AR internal invoice and PA internal invoice in AP module. Once the job import payable invoices programme has done. So this PA invoices will be transferred from PPM to AP module.
+Thota, Chiranjeevi 15 minutes 22 seconds
+And coming to a files, these are the internal service orders and internal orders within the company codes. I mean, intercompany, this is intercompany where...
+Thota, Chiranjeevi 15 minutes 35 seconds
+Invoices will be triggering from OM to AR and AR to AP.
+Thota, Chiranjeevi 15 minutes 43 seconds
+So we'll be daily, on daily basis, we'll be checking these invoices as well. We'll be going through this as well, I think tomorrow. We'll be walking through this on the daily check.
+Thota, Chiranjeevi 15 minutes 57 seconds
+Manual invoices, all entities can create manual invoices, ISPs of that 40 invoices.
+Thota, Chiranjeevi 16 minutes 3 seconds
+Where the supporters will directly create the invoices in software portal and image OCR image IDR.
+Thota, Chiranjeevi 16 minutes 12 seconds
+Only V 13, 14, 40, and 47 are using this idea.
+Thota, Chiranjeevi 16 minutes 21 seconds
+These are some of the examples.
+Thota, Chiranjeevi 16 minutes 25 seconds
+Sources.
+Thota, Chiranjeevi 16 minutes 31 seconds
+For FYS, that's what will be FYS.
+Thota, Chiranjeevi 16 minutes 38 seconds
+And here we can see like a...
+Thota, Chiranjeevi 16 minutes 41 seconds
+the same AR number, it will be triggering AP label. But in the AP label, here the site will be also added.
+Thota, Chiranjeevi 16 minutes 52 seconds
+Leach and Field 101 is reflecting right, or three or something like that.
+Thota, Chiranjeevi 17 minutes
+Malinke 101.
+Thota, Chiranjeevi 17 minutes 3 seconds
+So the site will be added additional to the IR transaction number.
+Thota, Chiranjeevi 17 minutes 11 seconds
+And for either inverter, the source will be image.
+Thota, Chiranjeevi 17 minutes 19 seconds
+Yeah, this is some of the invoices sources which we are currently using in our project status.
+Thota, Chiranjeevi 17 minutes 28 seconds
+And coming to ISP invoice.
+Thota, Chiranjeevi 18 minutes 8 seconds
+Yeah, ISP invoice is nothing but supplier portal invoices, where suppliers will be directly creating the invoices at their portal.
+Thota, Chiranjeevi 18 minutes 17 seconds
+So, we'll be logging into the supplier portal using the credentials, and once logged in, we can see the supplier portal.
+Thota, Chiranjeevi 18 minutes 27 seconds
+I need to click on that.
+Thota, Chiranjeevi 18 minutes 31 seconds
+And in the supplier portal, there will be a task named as Create Invoice.
+Thota, Chiranjeevi 18 minutes 39 seconds
+So, on the create invoice page, we'll be selecting the respective people from the drop-down, and...
+Thota, Chiranjeevi 18 minutes 46 seconds
+We need to give the all minute refills.
+Thota, Chiranjeevi 19 minutes 12 seconds
+And if there is any tax, we will be calculating tax for that, and we'll be validating it.
+
+Veerisetti, Krishna Vamsi
+44 minutes 45 seconds44:45
+Veerisetti, Krishna Vamsi 44 minutes 45 seconds
+Hi, Chiranjeevi.
+TC
+Thota, Chiranjeevi
+44 minutes 48 seconds44:48
+Thota, Chiranjeevi 44 minutes 48 seconds
+Yeah, I Vamsi.
+
+Veerisetti, Krishna Vamsi
+44 minutes 49 seconds44:49
+Veerisetti, Krishna Vamsi 44 minutes 49 seconds
+Like, may I know, like, what what is this problem time this task is about? Like, we have all the invoices for the whole month and we are uploading it to where like the box folder and all.
+TC
+Thota, Chiranjeevi
+45 minutes 2 seconds45:02
+Thota, Chiranjeevi 45 minutes 2 seconds
+Yeah, box folder, box is nothing but a SharePoint, which we are using for this client.
+
+Veerisetti, Krishna Vamsi
+45 minutes 6 seconds45:06
+Veerisetti, Krishna Vamsi 45 minutes 6 seconds
+Okay.
+TC
+Thota, Chiranjeevi
+45 minutes 9 seconds45:09
+Thota, Chiranjeevi 45 minutes 9 seconds
+So, from that SharePoint, the user will be downloading these invoices, and she will be verifying, and she will be paying it off.
+
+Veerisetti, Krishna Vamsi
+45 minutes 15 seconds45:15
+Veerisetti, Krishna Vamsi 45 minutes 15 seconds
+OPS.
+Veerisetti, Krishna Vamsi 45 minutes 17 seconds
+Okay, can the user is from Japan, right? You mentioned someone.
+TC
+Thota, Chiranjeevi
+45 minutes 21 seconds45:21
+Thota, Chiranjeevi 45 minutes 21 seconds
+Tamanna, 10.
+
+Veerisetti, Krishna Vamsi
+45 minutes 22 seconds45:22
+Veerisetti, Krishna Vamsi 45 minutes 22 seconds
+Jain, OK, OK.
+TC
+Thota, Chiranjeevi
+45 minutes 24 seconds45:24
+Thota, Chiranjeevi 45 minutes 24 seconds
+Yes.
+
+Veerisetti, Krishna Vamsi
+45 minutes 25 seconds45:25
+Veerisetti, Krishna Vamsi 45 minutes 25 seconds
+Okay.
+TC
+Thota, Chiranjeevi
+45 minutes 27 seconds45:27
+Thota, Chiranjeevi 45 minutes 27 seconds
+So, basically, they were...
+PC
+Pitani, Vasavi Chandra
+45 minutes 27 seconds45:27
+Pitani, Vasavi Chandra 45 minutes 27 seconds
+So change the user doesn't have access to AR, why do they need it inbox?
+TC
+Thota, Chiranjeevi
+45 minutes 33 seconds45:33
+Thota, Chiranjeevi 45 minutes 33 seconds
+No Vasavi, they have access to AR, but they will be reporting the invoices to government.
+Thota, Chiranjeevi 45 minutes 41 seconds
+So that is the reason there was ask from user and.
+Thota, Chiranjeevi 45 minutes 48 seconds
+Which we are following it of of I mean from Genpact we are we are following it pass away.
+PC
+Pitani, Vasavi Chandra
+45 minutes 56 seconds45:56
+Pitani, Vasavi Chandra 45 minutes 56 seconds
+Okay, they just want to cheque these invoices that are already available, like just in a folder, just to review those, right? Like, instead of going and checking in the system every time. But you mentioned unpaid invoices, right? How do...
+TC
+Thota, Chiranjeevi
+46 minutes 5 seconds46:05
+Thota, Chiranjeevi 46 minutes 5 seconds
+Yeah, just to review and...
+Thota, Chiranjeevi 46 minutes 11 seconds
+Yes, yes.
+PC
+Pitani, Vasavi Chandra
+46 minutes 15 seconds46:15
+Pitani, Vasavi Chandra 46 minutes 15 seconds
+We know if they're paid or not, like, do you verify that?
+Pitani, Vasavi Chandra 46 minutes 21 seconds
+I mean, how did you extract you? You extracted with status?
+TC
+Thota, Chiranjeevi
+46 minutes 22 seconds46:22
+Thota, Chiranjeevi 46 minutes 22 seconds
+Yeah, mostly any.
+Thota, Chiranjeevi 46 minutes 24 seconds
+Mostly, all of these invoices are unpaid on the other side.
+Thota, Chiranjeevi 46 minutes 29 seconds
+Mostly all of these invoices are unpaid only. After we uploading it to Box, she will verify it from her end and she will be paying these invoices.
+
+Pitani, Vasavi Chandra 53 minutes 3 seconds
+Chiranjeevi, are you the owner of this link? Because I don't have access. Try if you can add me.
+Pitani, Vasavi Chandra 53 minutes 11 seconds
+Or I need to request Sai.
+TC
+Thota, Chiranjeevi
+53 minutes 14 seconds53:14
+Thota, Chiranjeevi 53 minutes 14 seconds
+I think we need to cheque with Sai.
+Thota, Chiranjeevi 53 minutes 19 seconds
+Oh, sorry, no, silently.
+PC
+Pitani, Vasavi Chandra
+53 minutes 23 seconds53:23
+Pitani, Vasavi Chandra 53 minutes 23 seconds
+Okay.
+TC
+Thota, Chiranjeevi
+53 minutes 25 seconds53:25
+Thota, Chiranjeevi 53 minutes 25 seconds
+Yeah, I have created a folder with name as invoices as of 15 July 2026 and we'll be uploading all these invoices which we downloaded just before.
+PC
+Pitani, Vasavi Chandra
+53 minutes 26 seconds53:26
+Pitani, Vasavi Chandra 53 minutes 26 seconds
+Okay.
+TC
+Thota, Chiranjeevi
+53 minutes 40 seconds53:40
+Thota, Chiranjeevi 53 minutes 40 seconds
+Okay.
+Thota, Chiranjeevi 54 minutes 1 second
+Nothing like that.
+Thota, Chiranjeevi 54 minutes 7 seconds
+And there are also 13 items, so the count is matched. Yeah, done. I mean, we can send the mail to user.
+PC
+Pitani, Vasavi Chandra
+54 minutes 39 seconds54:39
+Pitani, Vasavi Chandra 54 minutes 39 seconds
+Are you creating RATM for this Chiranjeevi?
+TC
+Thota, Chiranjeevi
+54 minutes 42 seconds54:42
+Thota, Chiranjeevi 54 minutes 42 seconds
+Yes, I see.
+PC
+Pitani, Vasavi Chandra
+54 minutes 43 seconds54:43
+Pitani, Vasavi Chandra 54 minutes 43 seconds
+Okay.
+TC
+Thota, Chiranjeevi
+55 minutes 10 seconds55:10
+Thota, Chiranjeevi 55 minutes 10 seconds
+Yeah, it's done.
+Thota, Chiranjeevi 55 minutes 26 seconds
+And coming to the second topic, AP numbering issue invoice. So basically, as we discussed before, the invoices will be coming from AR to AP.
+Thota, Chiranjeevi 55 minutes 41 seconds
+Let me open one of the invites.
+Thota, Chiranjeevi 55 minutes 58 seconds
+The.
+Thota, Chiranjeevi 56 minutes 5 seconds
+Yeah, here the number is same, actually the same number is reflecting over here, but for the VA 13 to VO 40 and VA 13 to VA 14 for these two views, we are having some numbering issue. We have already rested on Oracle Lesser.
+Thota, Chiranjeevi 56 minutes 25 seconds
+But we did not receive any solution for that. So we are doing this activity where we are downloading the invoices from AR level and we are uploading it to AP level.
+Thota, Chiranjeevi 56 minutes 39 seconds
+Let me walk you through the document first. After that, we'll start the process.
+Thota, Chiranjeevi 57 minutes 10 seconds
+Yeah, as part of business requirement, every month, every week after sub pressure periods are closed, invoice copies must be uploaded at AP invoice level from AR transactions for VR 13 entity.
+Thota, Chiranjeevi 57 minutes 22 seconds
+So in ARA it will be V 13 and in AB it will be like V 14 or S V 14.
+Thota, Chiranjeevi 57 minutes 30 seconds
+So what we'll be doing is like we'll be in managing invoices, we'll be selecting the parameters like the previous month and source of supply chain orchestration FOS.
+Thota, Chiranjeevi 57 minutes 43 seconds
+And once it is done, we'll be exporting that invoices into itself.
+Thota, Chiranjeevi 57 minutes 48 seconds
+And we'll be identifying the invoice numbers which are not in regular sequence. So this will be in different sequence actually. We'll walk through that. And we'll be running a query so that we'll be getting the old transaction number and the new transaction number. So based on that, we'll be uploading invoices.
+
+Pitani, Vasavi Chandra 1 hour 23 minutes 2 seconds
+I don't want only.
+TC
+Thota, Chiranjeevi
+1 hour 23 minutes 3 seconds1:23:03
+Thota, Chiranjeevi 1 hour 23 minutes 3 seconds
+Chinta.
+MM
+Mareboina, Madhu
+1 hour 23 minutes 3 seconds1:23:03
+Mareboina, Madhu 1 hour 23 minutes 3 seconds
+No, no, so for this now we have a numbering issue, a disconnect, right? So they will verify that APN for that is this attachment, this invoice related to same number, right? It's they will identify that actual invoice number, they will.
+Mareboina, Madhu 1 hour 23 minutes 23 seconds
+Uh, track that to Vasavi.
+Mareboina, Madhu 1 hour 23 minutes 25 seconds
+That's why we are adding a.
+PC
+Pitani, Vasavi Chandra
+1 hour 23 minutes 26 seconds1:23:26
+Pitani, Vasavi Chandra 1 hour 23 minutes 26 seconds
+Yeah, we are adding here, but that as well user want to pay an AP right to that supplier for that for the chain now they just validate and.
+TC
+Thota, Chiranjeevi
+1 hour 23 minutes 35 seconds1:23:35
+Thota, Chiranjeevi 1 hour 23 minutes 35 seconds
+No, no, she will report that, yeah, she will report that invoices to government also in China.
+PC
+Pitani, Vasavi Chandra
+1 hour 23 minutes 43 seconds1:23:43
+Pitani, Vasavi Chandra 1 hour 23 minutes 43 seconds
+Okay, she anyway need that invoice copies is what you see.
+TC
+Thota, Chiranjeevi
+1 hour 23 minutes 47 seconds1:23:47
+Thota, Chiranjeevi 1 hour 23 minutes 47 seconds
+Team.
+PC
+Pitani, Vasavi Chandra
+1 hour 23 minutes 48 seconds1:23:48
+Pitani, Vasavi Chandra 1 hour 23 minutes 48 seconds
+Okay.
+TC
+Thota, Chiranjeevi
+1 hour 23 minutes 50 seconds1:23:50
+Thota, Chiranjeevi 1 hour 23 minutes 50 seconds
+Yes, Navya, so in the AP level here in the attachment.
+PC
+Pitani, Vasavi Chandra
+1 hour 23 minutes 52 seconds1:23:52
+Pitani, Vasavi Chandra 1 hour 23 minutes 52 seconds
+Yeah, I think Navya has dropped off. She might be having a call. Not sure, but yeah, but we can continue. She can later refer.
+TC
+Thota, Chiranjeevi
+1 hour 23 minutes 54 seconds1:23:54
+Thota, Chiranjeevi 1 hour 23 minutes 54 seconds
+Okay.
+Thota, Chiranjeevi 1 hour 23 minutes 57 seconds
+Good.
+Thota, Chiranjeevi 1 hour 29 minutes 25 seconds
+Yeah, I think we are done with downloading all the invoices. Let me cheque the count.
+Thota, Chiranjeevi 1 hour 29 minutes 32 seconds
+19.
+Thota, Chiranjeevi 1 hour 29 minutes 40 seconds
+Yeah, 19 that is done, and the IP level will be uploading these invoices.
+Thota, Chiranjeevi 1 hour 29 minutes 49 seconds
+YouTube.
+Thota, Chiranjeevi 1 hour 29 minutes 54 seconds
+Thank you.
+PC
+Pitani, Vasavi Chandra
+1 hour 37 minutes 53 seconds1:37:53
+Pitani, Vasavi Chandra 1 hour 37 minutes 53 seconds
+Actually, can we stop recording because this video may go long, but yeah, we are just doing this repetitive one, right? So nothing else, right?
+TC
+Thota, Chiranjeevi
+1 hour 37 minutes 59 seconds1:37:59
+Thota, Chiranjeevi 1 hour 37 minutes 59 seconds
+OK, Shashi.
+Thota, Chiranjeevi 1 hour 38 minutes 2 seconds
+Yeah, yeah, sure.
+Thota, Chiranjeevi 1 hour 38 minutes 4 seconds
+Nothing else.
+
+Pitani, Vasavi Chandra stopped transcription
